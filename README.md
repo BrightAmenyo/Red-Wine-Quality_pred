@@ -27,35 +27,14 @@ Different classification methods are used for comparison, such as KNN, Logistic 
 - Loading Libraries
 
 # Result
-- From the results, it can be observed that Random forest showed the highest accuracy score among all algorithms (0.808743), as well as the highest area under the ROC curve (AUC score) (0.867880). This may mean that Random forest performs well and best ability to distinguish between positive and negative cases in the classification task.
+- Based on the analysis, it's evident that GBM (Gradient Boosting Machine) outperforms all other algorithms with an impressive accuracy score of 92.00% and the highest AUC score of 0.985. This indicates GBM's exceptional ability to both classify instances correctly and distinguish between positive and negative cases in the classification task.
 
-- GBM (Gradient Boosting Machine) and KNN have comparable accuracy scores to Random Forest, with 0.795082 and 0.751366 respectively. GBM has the second-highest AUC score among all algorithms, indicating it has the best ability to distinguish between positive and negative cases in the classification task.
+- Following GBM, Random Forest demonstrates strong performance with an accuracy score of 80.87% and an AUC score of 0.868. While Random Forest falls short of GBM in terms of AUC score, it still exhibits robust classification capabilities and stands as a reliable choice for classification tasks.
 
-- Decision Tree has the lowest accuracy score of 0.718579 and the lowest AUC score of 0.773032, suggesting it might not generalize well to unseen data or capture the underlying patterns in the data as effectively as other algorithms.
+- KNN (K-Nearest Neighbors) follows with a respectable accuracy score of 75.14% and an AUC score of 0.809. Although KNN's performance is slightly lower compared to GBM and Random Forest, it remains competitive and offers a straightforward approach to classification.
 
-- While accuracy is an important metric, considering both accuracy and AUC score is crucial. AUC score provides a measure of the classifier's performance across all classification thresholds, making it useful for assessing the overall performance of the model.
+- Ridge and Lasso Logistic Regression, along with Logistic Regression, yield similar accuracy scores around 75%, with AUC scores ranging from 0.783 to 0.787. While logistic regression models provide decent classification performance, they are surpassed by GBM, Random Forest, and KNN in terms of accuracy and AUC score.
 
-- In summary, while Random forest performs better in terms of accuracy and AUC, GBM shows promise with its second-highest which s slightly lower in AUC score than Random forest, indicating it might be better at correctly classifying instances in the dataset. However, the choice of the algorithm also depends on other factors like interpretability, computational efficiency, and the specific requirements of the problem at hand.
+- Lastly, Decision Tree trails behind with the lowest accuracy score of 71.86% and an AUC score of 0.773. Decision Tree's comparatively lower performance highlights its limitations in capturing complex relationships within the data and generalizing to unseen instances effectively.
 
-
-# Other ML techniques
-
-# Model Accuracies:
-- Random Forest: 0.8142076502732241
-- Support Vector Classifier: 0.6338797814207651
-- Gradient Boosting: 0.7650273224043715
-- Gaussian Naive Bayes: 0.7240437158469946
-- Multi-layer Perceptron: 0.6967213114754098
-- AdaBoost: 0.7486338797814208
-- Extra Trees: 0.8114754098360656
-- Linear SVM: 0.5573770491803278
-
-#  Model AUC Scores:
-- Random Forest: 0.8123222748815165
-- Support Vector Classifier: 0.595138358049228
-- Gradient Boosting: 0.7602507261886562
-- Gaussian Naive Bayes: 0.7306986699281456
-- Multi-layer Perceptron: 0.6898792233603424
-- AdaBoost: 0.7417520256841462
-- Extra Trees: 0.8099526066350712
-- Linear SVM: 0.6109769148448249
+- In conclusion, GBM emerges as the top-performing algorithm, offering the highest accuracy and AUC scores. However, the selection of the most suitable algorithm depends on various factors such as interpretability, computational efficiency, and specific requirements of the classification task.
